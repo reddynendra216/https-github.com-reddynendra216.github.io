@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome.5.7.2.css">
+    <link rel="stylesheet" href="bootstrap/css/animate.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: white url("img/image5.jpeg") no-repeat fixed bottom;
+        }
+        .form-div{
+            box-shadow: 0 0 10px #907a61;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            margin: 150px auto;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .fa-user-circle{
+            font-size: 100px;
+            margin-top: -50px;
+            border: 5px solid #907a61;
+            border-radius: 50%;
+            box-shadow: 0 0 10px black;
+        }
+        .form-div h2{
+            color: white;
+            margin-top: 15px;
+        }
+        .inputField{
+            text-align: center;
+            font-size: 18px;
+            height: 35px;
+            border: none;
+            outline: none;
+            margin: 5px;
+            background: transparent;
+            color: white;
+            width: 200px;
+            border-bottom: 3px solid #6e6452;
+        }
+        .inputField:focus{
+            border-bottom: 3px solid #907a61;
+        }
+        ::placeholder{
+            color: lightgray;
+        }
+        #submit{
+            background-color: #6b5d52;
+            color: white;
+            font-size: 18px;
+            padding: 10px 35px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            margin: 15px;
+            box-shadow: 0 0 5px black;
+        }
+        #submit:hover{
+            background-color: #907a61;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="form-div animated jello"> 
+        <i class="fa fa-user-circle"></i>
+        <h2>Login Here</h2>
+        <form>
+            <input type="text" placeholder="User Name" class="inputField">
+            <br>
+            <input type="password" placeholder="Password" class="inputField">
+            <br>
+            <input type="submit" value="Login" id="submit">
+        </form>
+    </div>
+
+</body>
+</html>
